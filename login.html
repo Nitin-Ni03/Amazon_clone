@@ -3,58 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazon.in</title>
+    <title>Amazon Sign In / Create Account</title>
     <link rel="icon" type="image/png" href="asset/amazon-icon-4.png">
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <div class="logo">
-        <img src="asset/amazon-logo-transparent.png" >
+        <a href="index.html" title="Amazon Home">
+            <img src="asset/amazon-logo-transparent.png" alt="Amazon Logo">
+        </a>
     </div>
     
-
     <main id="login-form">
         <h1>Create Account</h1>
 
-        <label> Your Name</label>
-        <input type="text" placeholder="First and last name" required></div>
+        <label>Your Name</label>
+        <input type="text" placeholder="First and last name" required>
 
         <label>Email</label>
-        <input type="email" required></div>
+        <input type="email" placeholder="Email address" required>
 
         <label>Password</label>
-        <input type="password" minlength="8" required></div>
+        <input type="password" minlength="8" placeholder="At least 8 characters" required>
 
-        <p class="info">ℹ Password must be at least 8 character</p>
+        <p class="info">ℹ Password must be at least 8 characters</p>
 
         <label>Re-Enter Password</label>
-        <input type="password" minlength="8" required></div>
+        <input type="password" minlength="8" required>
 
-        <button class="button">Create your Amazon account</button>
+        <button class="button" onclick="alert('Account created! Welcome to Amazon.'); location.href='index.html';">Create your Amazon account</button>
 
         <p class="terms">
-            By Creating an account, you agree to 
+            By creating an account, you agree to 
             <a href="#">Amazon's Site Terms</a> and 
-            <a href="#">Privacy Notice</a>
+            <a href="#">Privacy Notice</a>.
         </p>
 
         <hr>
 
-        <p  class="sign-in">
+        <p class="sign-in">
             Already have an account? 
-            <a href="#">Sign in ></a>
+            <a href="#">Sign in &gt;</a>
         </p>
 
+        <div style="margin-top:15px; text-align:center; font-size:0.85rem;">
+            <a href="electronics.html" style="color:#007185; text-decoration:none;">Shop Electronics</a> • 
+            <a href="appliances.html" style="color:#007185; text-decoration:none;">Shop Home Appliances</a>
+        </div>
     </main>
 
-        <div id="footer">
-            <a href="#">Site Terms</a>
-            <a href="#">Privacy Notice</a>
-            <a href="#">Help</a>
-        </div>
+    <div id="footer">
+        <a href="index.html">Home</a>
+        <a href="#">Site Terms</a>
+        <a href="#">Privacy Notice</a>
+        <a href="#">Help</a>
+    </div>
 
-        <div class="copy-right">
-            <p>© 1996-2026 Amazon.com, inc. or its affiliates. All rights reserved.</p>
-        </div>
+    <div class="copy-right">
+        <p>© 1996-2026 Amazon.com, Inc. or its affiliates. All rights reserved.</p>
+    </div>
 </body>
 </html>

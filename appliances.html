@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon.in: Home & Kitchen Appliances - Refrigerators, Washing Machines, ACs & Microwaves</title>
+    <link rel="icon" type="image/png" href="asset/amazon-icon-4.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="category.css">
+</head>
+<body>
+
+    <!-- Amazon Top Header -->
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="nav-logo" title="Amazon Home">
+                <div class="logo"></div>
+            </a>
+
+            <div class="nav-address">
+                <p class="add-first">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-second">India</p>
+                </div>
+            </div>
+
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>Appliances</option>
+                    <option>All</option>
+                    <option>Electronics</option>
+                </select>
+                <input type="text" placeholder="Search Refrigerators, ACs, Washing Machines, Microwaves..." class="search-input">
+                <div class="search-icon" title="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <a href="login.html" class="nav-signin" style="color:white; text-decoration:none;">
+                <p class="nav-first">Hello, sign in</p>
+                <p class="nav-second">Account & Lists</p>
+            </a>
+
+            <div class="nav-return">
+                <p class="nav-first">Returns</p>
+                <p class="nav-second">& Orders</p>
+            </div>
+
+            <div class="nav-cart" title="Shopping Cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+                <span class="cart-count-badge">0</span>
+            </div>
+        </div>
+
+        <!-- Navigation Sub-panel -->
+        <div class="panel">
+            <div class="panel-all">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+            <div class="panel-options">
+                <a href="index.html">Home</a>
+                <a href="electronics.html">Electronics</a>
+                <a href="appliances.html" class="active">Home Appliances</a>
+                <a href="appliances.html">Kitchen & Dining</a>
+                <a href="index.html">Today's Deals</a>
+                <a href="login.html">Sign In</a>
+                <a href="index.html">Customer Service</a>
+            </div>
+            <div class="panel-deals">
+                <a href="appliances.html" style="color:#febd69; text-decoration:none; font-weight:700;">
+                    <i class="fa-solid fa-tag"></i> Appliances Festival: Up to 55% Off + Bank Discounts
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Appliances Hero Promotional Banner -->
+    <section class="category-hero" style="background: linear-gradient(135deg, #1b2838 0%, #2a3d53 50%, #1f4058 100%);">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <span class="hero-badge-tag" style="background-color: #067d62;"><i class="fa-solid fa-house-laptop"></i> Major & Small Appliances</span>
+                <h1>Transform Your Home with Smart Living</h1>
+                <p>Shop energy-efficient 5-star refrigerators, AI-powered front load washers, convertible split inverter air conditioners, and premium kitchen appliances with scheduled delivery and certified installation.</p>
+            </div>
+            <div class="hero-perks">
+                <div class="hero-perk-item">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <div class="hero-perk-text">
+                        <span>PROFESSIONAL SERVICE</span>
+                        <strong>Free Installation & Demo</strong>
+                    </div>
+                </div>
+                <div class="hero-perk-item">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <div class="hero-perk-text">
+                        <span>CONVENIENT SLOTS</span>
+                        <strong>Scheduled Delivery</strong>
+                    </div>
+                </div>
+                <div class="hero-perk-item">
+                    <i class="fa-solid fa-repeat"></i>
+                    <div class="hero-perk-text">
+                        <span>EXCHANGE OFFER</span>
+                        <strong>Up to $150 Off Old Item</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subcategory Pills Filter -->
+    <div class="category-subnav">
+        <div class="subnav-container">
+            <button class="subnav-pill active" data-category="all"><i class="fa-solid fa-border-all"></i> All Appliances</button>
+            <button class="subnav-pill" data-category="refrigerators"><i class="fa-solid fa-snowflake"></i> Refrigerators</button>
+            <button class="subnav-pill" data-category="washers"><i class="fa-solid fa-soap"></i> Washing Machines</button>
+            <button class="subnav-pill" data-category="airconditioners"><i class="fa-solid fa-wind"></i> Air Conditioners</button>
+            <button class="subnav-pill" data-category="microwaves"><i class="fa-solid fa-fire-burner"></i> Microwave Ovens</button>
+            <button class="subnav-pill" data-category="vacuums"><i class="fa-solid fa-broom"></i> Vacuum Cleaners</button>
+            <button class="subnav-pill" data-category="kitchen"><i class="fa-solid fa-kitchen-set"></i> Kitchen Appliances</button>
+        </div>
+    </div>
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb-container" aria-label="breadcrumb">
+        <a href="index.html">Home</a> <span>›</span>
+        <a href="appliances.html">Large Appliances</a> <span>›</span>
+        <span>Refrigerators, Washers, ACs & Kitchen Solutions</span>
+    </nav>
+
+    <!-- Main Store Layout -->
+    <div class="store-container">
+
+        <!-- Sidebar Filters -->
+        <aside class="sidebar-filters">
+            <div class="filter-section">
+                <div class="filter-title">Category</div>
+                <ul class="filter-list">
+                    <li><label><input type="radio" name="category" value="all" checked> All Appliances</label></li>
+                    <li><label><input type="radio" name="category" value="refrigerators"> Refrigerators</label></li>
+                    <li><label><input type="radio" name="category" value="washers"> Washing Machines</label></li>
+                    <li><label><input type="radio" name="category" value="airconditioners"> Air Conditioners</label></li>
+                    <li><label><input type="radio" name="category" value="microwaves"> Microwave Ovens</label></li>
+                    <li><label><input type="radio" name="category" value="vacuums"> Vacuums & Purifiers</label></li>
+                    <li><label><input type="radio" name="category" value="kitchen"> Kitchen Small Appliances</label></li>
+                </ul>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-title">Energy Efficiency</div>
+                <ul class="filter-list">
+                    <li>
+                        <label>
+                            <input type="checkbox" name="energy" value="5star">
+                            <span class="energy-rating-pill"><i class="fa-solid fa-star"></i> 5 Star (Max Savings)</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="energy" value="4star">
+                            <span class="energy-rating-pill" style="background:#e8f0fe; color:#1a73e8; border-color:#d2e3fc;"><i class="fa-solid fa-star"></i> 4 Star Certified</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="energy" value="3star">
+                            <span class="energy-rating-pill" style="background:#fef7e0; color:#b06000; border-color:#feefc3;"><i class="fa-solid fa-star"></i> 3 Star Inverter</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-title">Delivery & Services</div>
+                <ul class="filter-list">
+                    <li>
+                        <label>
+                            <input type="checkbox" name="primeOnly">
+                            <span class="prime-filter-badge"><i class="fa-brands fa-amazon"></i>prime</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" checked>
+                            <span>Free Scheduled Delivery</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" checked>
+                            <span>Free Installation Included</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-title">Brands</div>
+                <ul class="filter-list">
+                    <li><label><input type="checkbox" name="brand" value="Samsung"> Samsung</label></li>
+                    <li><label><input type="checkbox" name="brand" value="LG"> LG</label></li>
+                    <li><label><input type="checkbox" name="brand" value="Whirlpool"> Whirlpool</label></li>
+                    <li><label><input type="checkbox" name="brand" value="Bosch"> Bosch</label></li>
+                    <li><label><input type="checkbox" name="brand" value="Dyson"> Dyson</label></li>
+                    <li><label><input type="checkbox" name="brand" value="Philips"> Philips</label></li>
+                    <li><label><input type="checkbox" name="brand" value="Panasonic"> Panasonic</label></li>
+                    <li><label><input type="checkbox" name="brand" value="Haier"> Haier</label></li>
+                </ul>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-title">Customer Reviews</div>
+                <ul class="filter-list">
+                    <li>
+                        <label>
+                            <span class="star-rating-filter">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                                <span>& Up</span>
+                            </span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <span class="star-rating-filter">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                                <span>& Up</span>
+                            </span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-title">Price Filter</div>
+                <div class="price-inputs">
+                    <input type="number" id="minPrice" placeholder="$ Min" min="0">
+                    <span>-</span>
+                    <input type="number" id="maxPrice" placeholder="$ Max" min="0">
+                    <button class="price-btn" id="priceGoBtn">Go</button>
+                </div>
+            </div>
+
+            <button class="clear-filters-btn"><i class="fa-solid fa-rotate-left"></i> Reset All Filters</button>
+        </aside>
+
+        <!-- Main Product Section -->
+        <main class="products-main">
+            <!-- Results & Sorting Toolbar -->
+            <div class="results-toolbar">
+                <div class="results-count">
+                    Showing <strong>12</strong> of 12 home appliance deals
+                </div>
+                <div class="sort-wrapper">
+                    <label for="sortSelect">Sort by:</label>
+                    <select id="sortSelect" class="sort-select">
+                        <option value="featured">Featured Deals</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="rating">Avg. Customer Review</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="products-grid">
+
+                <!-- 1. Samsung 653L Family Hub Smart Refrigerator -->
+                <div class="product-card" 
+                     data-title="Samsung 653L 3-Door Side-by-Side Smart Refrigerator with Family Hub AI Screen, Water & Ice Dispenser, WiFi Enabled"
+                     data-category="refrigerators"
+                     data-brand="Samsung"
+                     data-price="1499.00"
+                     data-mrp="1899.00"
+                     data-discount="21"
+                     data-rating="4.8"
+                     data-reviews="2,410"
+                     data-prime="true"
+                     data-specs="Capacity:653 Litres (Ideal for 5+ family members);Energy Rating:5-Star Equivalent Inverter;Compressor:Digital Inverter with 20-Year Warranty;Smart Features:Family Hub Touchscreen, Food Management, Spotify & SmartThings;Dispenser:Automatic In-Door Ice & Chilled Water Dispenser;Dimensions:91.2 cm x 178 cm x 71.6 cm;Installation:Free Brand Installation & Demo Included">
+                    <span class="card-badge badge-bestseller">#1 Best Seller</span>
+                    <div class="product-image-wrap">
+                        <img src="asset/appliance_fridge.jpg" alt="Samsung 653L Smart Refrigerator" loading="lazy">
+                    </div>
+                    <div class="product-category-tag">Refrigerators • Samsung</div>
+                    <h3 class="product-title">Samsung 653L AI Inverter Side-by-Side Refrigerator with Family Hub™ Smart Touchscreen</h3>
+                    <div class="product-rating">
+                        <span class="rating-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                        <span class="rating-count">4.8 (2,410)</span>
+                    </div>
+                    <div class="product-specs">
+                        <span class="energy-rating-pill"><i class="fa-solid fa-leaf"></i> 5-Star AI Inverter</span>
+                        <span class="spec-pill">653 Litres</span>
+                        <span class="spec-pill">Family Hub AI</span>
+                        <span class="spec-pill">Water & Ice Dispenser</span>
+                    </div>
+                    <div class="product-price-row">
+                        <span class="deal-tag">Save $400</span>
+                        <span class="price-main"><sup>$</sup>1,499<sup>00</sup></span>
+                        <span class="price-mrp">$1,899.00</span>
+                    </div>
+                    <div class="installation-tag"><i class="fa-solid fa-circle-check"></i> Free Installation & Demo Included</div>
+                    <div class="exchange-offer-text"><i class="fa-solid fa-arrows-rotate"></i> Up to $150 off on Exchange</div>
+                    <div class="prime-delivery">
+                        <span class="prime-logo-text"><i class="fa-brands fa-amazon"></i>prime</span>
+                        <span>FREE Scheduled Delivery by <strong>Friday</strong></span>
+                    </div>
+                    <div class="stock-status in-stock">✓ In Stock</div>
+                    <div class="card-actions">
+                        <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                        <button class="btn-quick-view"><i class="fa-regular fa-eye"></i> Quick Details</button>
+                    </div>
+                </div>
+
+                <!-- 2. LG 9.0 Kg AI Direct Drive Front Load -->
+                <div class="product-card" 
+                     data-title="LG 9.0 Kg 5 Star AI Direct Drive Front Load Washing Machine with Steam Wash, TurboWash 360, ThinQ WiFi (Titanium Black)"
+                     data-category="washers"
+                     data-brand="LG"
+                     data-price="679.00"
+                     data-mrp="849.00"
+                     data-discount="20"
+                     data-rating="4.7"
+                     data-reviews="5,180"
+                     data-prime="true"
+                     data-specs="Capacity:9.0 Kg (Suited for large households);Energy Rating:5 Star Energy Certified;Motor:AI Direct Drive Inverter with 10-Yr Warranty;Wash Technology:6 Motion DD with Steam Allergy Care;Spin Speed:1400 RPM High Spin;Connectivity:LG ThinQ WiFi Remote Control;Installation:Free Brand Installation & Pipe Kit">
+                    <span class="card-badge badge-choice">Amazon's <span>Choice</span></span>
+                    <div class="product-image-wrap">
+                        <img src="asset/appliance_washing_machine.jpg" alt="LG 9.0 Kg Front Load Washer" loading="lazy">
+                    </div>
+                    <div class="product-category-tag">Washing Machines • LG</div>
+                    <h3 class="product-title">LG 9.0 Kg 5-Star AI Direct Drive™ Front Load Washing Machine with Steam Allergy Care</h3>
+                    <div class="product-rating">
+                        <span class="rating-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span>
+                        <span class="rating-count">4.7 (5,180)</span>
+                    </div>
+                    <div class="product-specs">
+                        <span class="energy-rating-pill"><i class="fa-solid fa-star"></i> 5 Star Rated</span>
+                        <span class="spec-pill">9.0 Kg</span>
+                        <span class="spec-pill">1400 RPM</span>
+                        <span class="spec-pill">Steam Wash</span>
+                    </div>
+                    <div class="product-price-row">
+                        <span class="deal-tag">20% off</span>
+                        <span class="price-main"><sup>$</sup>679<sup>00</sup></span>
+                        <span class="price-mrp">$849.00</span>
+                    </div>
+                    <div class="installation-tag"><i class="fa-solid fa-circle-check"></i> Free Installation & Demo Included</div>
+                    <div class="exchange-offer-text"><i class="fa-solid fa-arrows-rotate"></i> Up to $80 off on Exchange</div>
+                    <div class="prime-delivery">
+                        <span class="prime-logo-text"><i class="fa-brands fa-amazon"></i>prime</span>
+                        <span>FREE Scheduled Delivery</span>
+                    </div>
+                    <div class="stock-status in-stock">✓ In Stock</div>
+                    <div class="card-actions">
+                        <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                        <button class="btn-quick-view"><i class="fa-regular fa-eye"></i> Quick Details</button>
+                    </div>
+                </div>
+
+                <!-- 3. Whirlpool 1.5 Ton 5-Star Inverter AC -->
+                <div class="product-card" 
+                     data-title="Whirlpool 1.5 Ton 5-Star Flexicool Inverter Split AC (Convertible 6-in-1, 100% Copper Condenser, PM 2.5 Air Filter, White)"
+                     data-category="airconditioners"
+                     data-brand="Whirlpool"
+                     data-price="549.00"
+                     data-mrp="749.00"
+                     data-discount="27"
+                     data-rating="4.6"
+                     data-reviews="3,920"
+                     data-prime="true"
+                     data-specs="Capacity:1.5 Ton (Ideal for rooms 150-180 sq ft);Energy Rating:5 Star BEE High Efficiency;Cooling Modes:Convertible 6-in-1 Flexicool;Condenser:100% Copper with Anti-Rust Shield;Air Filtration:PM 2.5 Filter and Self-Clean Tech;Warranty:1 Year Comprehensive, 10 Years on Compressor">
+                    <span class="card-badge badge-deal">Limited Time Deal</span>
+                    <div class="product-image-wrap">
+                        <img src="asset/box3_image.jpg" alt="Whirlpool Inverter Split AC" loading="lazy">
+                    </div>
+                    <div class="product-category-tag">Air Conditioners • Whirlpool</div>
+                    <h3 class="product-title">Whirlpool 1.5 Ton 5-Star Flexicool Inverter Split AC (Convertible 6-in-1, Copper)</h3>
+                    <div class="product-rating">
+                        <span class="rating-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span>
+                        <span class="rating-count">4.6 (3,920)</span>
+                    </div>
+                    <div class="product-specs">
+                        <span class="energy-rating-pill"><i class="fa-solid fa-star"></i> 5 Star BEE</span>
+                        <span class="spec-pill">1.5 Ton</span>
+                        <span class="spec-pill">Convertible 6-in-1</span>
+                        <span class="spec-pill">PM 2.5 Filter</span>
+                    </div>
+                    <div class="product-price-row">
+                        <span class="deal-tag">Save $200</span>
+                        <span class="price-main"><sup>$</sup>549<sup>00</sup></span>
+                        <span class="price-mrp">$749.00</span>
+                    </div>
+                    <div class="installation-tag"><i class="fa-solid fa-screwdriver-wrench"></i> Standard Installation at just $15</div>
+                    <div class="prime-delivery">
+                        <span class="prime-logo-text"><i class="fa-brands fa-amazon"></i>prime</span>
+                        <span>FREE Express Delivery Tomorrow</span>
+                    </div>
+                    <div class="stock-status in-stock">✓ In Stock</div>
+                    <div class="card-actions">
+                        <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                        <button class="btn-quick-view"><i class="fa-regular fa-eye"></i> Quick Details</button>
+                    </div>
+                </div>
+
+                <!-- 4. Bosch 32L Convection Microwave Oven -->
+                <div class="product-card" 
+                     data-title="Bosch 32L Convection Microwave Oven with Smart Sensor Auto-Cook Menus, Stainless Steel Cavity, Baking & Grilling"
+                     data-category="microwaves"
+                     data-brand="Bosch"
+                     data-price="289.00"
+                     data-mrp="369.00"
+                     data-discount="22"
+                     data-rating="4.6"
+                     data-reviews="1,850"
+                     data-prime="true"
+                     data-specs="Capacity:32 Litres (Suitable for large families);Functions:Convection, Grill, Bake, Reheat, Defrost;Auto Menus:121 Pre-programmed recipes;Cavity:Food-grade Seamless Stainless Steel;Power:900W Microwave, 1200W Grill;Controls:Touch Key Pad with Digital LED Display">
+                    <span class="card-badge badge-choice">Amazon's <span>Choice</span></span>
+                    <div class="product-image-wrap">
+                        <img src="asset/box3_image.jpg" alt="Bosch Convection Microwave" loading="lazy">
+                    </div>
+                    <div class="product-category-tag">Microwave Ovens • Bosch</div>
+                    <h3 class="product-title">Bosch 32L Convection Microwave Oven with 121 Auto-Cook Menus & Stainless Cavity</h3>
+                    <div class="product-rating">
+                        <span class="rating-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span>
+                        <span class="rating-count">4.6 (1,850)</span>
+                    </div>
+                    <div class="product-specs">
+                        <span class="spec-pill">32 Litres</span>
+                        <span class="spec-pill">Convection & Grill</span>
+                        <span class="spec-pill">Stainless Cavity</span>
+                    </div>
+                    <div class="product-price-row">
+                        <span class="deal-tag">22% off</span>
+                        <span class="price-main"><sup>$</sup>289<sup>00</sup></span>
+                        <span class="price-mrp">$369.00</span>
+                    </div>
+                    <div class="installation-tag"><i class="fa-solid fa-circle-check"></i> Free Demo by Brand Specialist</div>
+                    <div class="prime-delivery">
+                        <span class="prime-logo-text"><i class="fa-brands fa-amazon"></i>prime</span>
+                        <span>FREE One-Day Delivery</span>
+                    </div>
+                    <div class="stock-status in-stock">✓ In Stock</div>
+                    <div class="card-actions">
+                        <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                        <button class="btn-quick-view"><i class="fa-regular fa-eye"></i> Quick Details</button>
+                    </div>
+                </div>
+
+                <!-- 5. Dyson V15 Detect Cordless Vacuum Cleaner -->
+                <div class="product-card" 
+                     data-title="Dyson V15 Detect Cordless Vacuum Cleaner with Laser Fluffy Head, Piezo Acoustic Dust Sensor, 60min Runtime, LCD Screen"
+                     data-category="vacuums"
+                     data-brand="Dyson"
+                     data-price="749.99"
+                     data-mrp="849.99"
+                     data-discount="12"
+                     data-rating="4.9"
+                     data-reviews="4,210"
+                     data-prime="true"
+                     data-specs="Suction Power:240 AW Dyson Hyperdymium Motor;Filtration:Whole-machine HEPA filtration traps 99.99% particles;Laser Technology:Reveals microscopic invisible dust;Runtime:Up to 60 Minutes fade-free battery;Weight:3.0 kg Cordless portability;Accessories:Laser Slim Fluffy cleaner head, Digital Motorbar, Hair screw tool">
+                    <span class="card-badge badge-bestseller">Top Rated</span>
+                    <div class="product-image-wrap">
+                        <img src="asset/box3_image.jpg" alt="Dyson V15 Cordless Vacuum" loading="lazy">
+                    </div>
+                    <div class="product-category-tag">Vacuum Cleaners • Dyson</div>
+                    <h3 class="product-title">Dyson V15 Detect Cordless Vacuum with Laser Dust Detection & HEPA Filtration</h3>
+                    <div class="product-rating">
+                        <span class="rating-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                        <span class="rating-count">4.9 (4,210)</span>
+                    </div>
+                    <div class="product-specs">
+                        <span class="spec-pill">Laser Detection</span>
+                        <span class="spec-pill">240 AW Suction</span>
+                        <span class="spec-pill">60-Min Runtime</span>
+                    </div>
+                    <div class="product-price-row">
+                        <span class="deal-tag">Save $100</span>
+                        <span class="price-main"><sup>$</sup>749<sup>99</sup></span>
+                        <span class="price-mrp">$849.99</span>
+                    </div>
+                    <div class="prime-delivery">
+                        <span class="prime-logo-text"><i class="fa-brands fa-amazon"></i>prime</span>
+                        <span>FREE Scheduled Delivery by Tomorrow</span>
+                    </div>
+                    <div class="stock-status in-stock">✓ In Stock</div>
+                    <div class="card-actions">
+                        <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                        <button class="btn-quick-view"><i class="fa-regular fa-eye"></i> Quick Details</button>
+                    </div>
+                </div>
+
+                <!-- 6. Bosch 14 Place Settings Dishwasher -->
+                <div class="product-card" 
+                     data-title="Bosch 14 Place Settings Free-Standing Dishwasher (Intensive Kadhai 70C Programme, EcoSilence Drive, Home Connect WiFi)"
+                     data-category="washers"
+                     data-brand="Bosch"
+                     data-price="799.00"
+                     data-mrp="999.00"
+                     data-discount="20"
+                     data-rating="4.7"
+                     data-reviews="2,150"
+                     data-prime="true"
+                     data-specs="Place Settings:14 Place Settings (Suitable for family up to 6);Water Usage:Only 9.5 Litres per standard cycle;Noise Level:44 dB Super Silent EcoSilence;Special Programs:Intensive Kadhai 70C for oily Indian utensils;Smart Tech:Home Connect WiFi Remote app;Warranty:2 Years comprehensive, 10 Years against rust-through">
+                    <span class="card-badge badge-deal">20% off</span>
+                    <div class="product-image-wrap">
+                        <img src="asset/appliance_washing_machine.jpg" alt="Bosch 14 Place Dishwasher" loading="lazy">
+                    </div>
+                    <div class="product-category-tag">Dishwashers • Bosch</div>
+                    <h3 class="product-title">Bosch 14 Place Settings Free-Standing Dishwasher with Intensive Kadhai Mode</h3>
+                    <div class="product-rating">
+                        <span class="rating-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span>
+                        <span class="rating-count">4.7 (2,150)</span>
+                    </div>
+                    <div class="product-specs">
+                        <span class="energy-rating-pill"><i class="fa-solid fa-leaf"></i> A+++ Inverter</span>
+                        <span class="spec-pill">14 Place Settings</span>
+                        <span class="spec-pill">9.5L Water Usage</span>
+                    </div>
+                    <div class="product-price-row">
+                        <span class="deal-tag">Save $200</span>
+                        <span class="price-main"><sup>$</sup>799<sup>00</sup></span>
+                        <span class="price-mrp">$999.00</span>
+                    </div>
+                    <div class="installation-tag"><i class="fa-solid fa-circle-check"></i> Free Installation & Demo Included</div>
+                    <div class="prime-delivery">
+                        <span class="prime-logo-text"><i class="fa-brands fa-amazon"></i>prime</span>
+                        <span>FREE Scheduled Delivery</span>
+                    </div>
+                    <div class="stock-status in-stock">✓ In Stock</div>
+                    <div class="card-actions">
+                        <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                        <button class="btn-quick-view"><i class="fa-regular fa-eye"></i> Quick Details</button>
+                    </div>
+                </div>
+
+                <!-- 7. Philips Digital Air Fryer 4.1L -->
+                <div class="product-card" 
+                     data-title="Philips 4.1L Digital Air Fryer with Rapid Air Technology, 7 Touchscreen Presets, Keep Warm Function, 1400W"
+                     data-category="kitchen"
+                     data-brand="Philips"
+                     data-price="119.00"
+                     data-mrp="169.00"
+                     data-discount="30"
+                     data-rating="4.8"
+                     data-reviews="12,940"
+                     data-prime="true"
+                     data-specs="Capacity:4.1 Litres basket;Technology:Patented Rapid Air with Starfish bottom;Health:Fries with up to 90% less oil;Programs:7 One-touch digital touchscreen presets;Power:1400W Fast heating element;Cleaning:QuickClean basket dishwasher safe">
+                    <span class="card-badge badge-bestseller">#1 Kitchen Deal</span>
+                    <div class="product-image-wrap">
+                        <img src="asset/box3_image.jpg" alt="Philips Digital Air Fryer" loading="lazy">
+                    </div>
+                    <div class="product-category-tag">Kitchen Appliances • Philips</div>
+                    <h3 class="product-title">Philips 4.1L Digital Touch Air Fryer with Rapid Air 90% Less Fat Tech</h3>
+                    <div class="product-rating">
+                        <span class="rating-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                        <span class="rating-count">4.8 (12,940)</span>
+                    </div>
+                    <div class="product-specs">
+                        <span class="spec-pill">4.1L Capacity</span>
+                        <span class="spec-pill">90% Less Fat</span>
+                        <span class="spec-pill">7 Presets</span>
+                    </div>
+                    <div class="product-price-row">
+                        <span class="deal-tag">30% off</span>
+                        <span class="price-main"><sup>$</sup>119<sup>00</sup></span>
+                        <span class="price-mrp">$169.00</span>
+                    </div>
+                    <div class="prime-delivery">
+                        <span class="prime-logo-text"><i class="fa-brands fa-amazon"></i>prime</span>
+                        <span>FREE Next-Day Delivery</span>
+                    </div>
+                    <div class="stock-status in-stock">✓ In Stock</div>
+                    <div class="card-actions">
+                        <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                        <button class="btn-quick-view"><i class="fa-regular fa-eye"></i> Quick Details</button>
+                    </div>
+                </div>
+
+                <!-- 8. LG 437L Frost-Free Double Door Refrigerator -->
+                <div class="product-card" 
+                     data-title="LG 437L 2-Star Frost-Free Smart Inverter Double Door Refrigerator with Door Cooling+, Multi Air Flow, Convertible Box"
+                     data-category="refrigerators"
+                     data-brand="LG"
+                     data-price="629.00"
+                     data-mrp="799.00"
+                     data-discount="21"
+                     data-rating="4.6"
+                     data-reviews="3,840"
+                     data-prime="true"
+                     data-specs="Capacity:437 Litres (Ideal for families of 4-5);Type:Double Door Frost-Free;Compressor:Smart Inverter with 10-Yr Warranty;Cooling:Door Cooling+ vents on inner door;Shelves:Trimless Toughened Glass capable of holding 175 kg;Energy:Smart Inverter low electricity consumption">
+                    <span class="card-badge badge-choice">Amazon's <span>Choice</span></span>
+                    <div class="product-image-wrap">
+                        <img src="asset/appliance_fridge.jpg" alt="LG 437L Refrigerator" loading="lazy">
+                    </div>
+                    <div class="product-category-tag">Refrigerators • LG</div>
+                    <h3 class="product-title">LG 437L Smart Inverter Double Door Refrigerator with Door Cooling+</h3>
+                    <div class="product-rating">
+                        <span class="rating-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span>
+                        <span class="rating-count">4.6 (3,840)</span>
+                    </div>
+                    <div class="product-specs">
+                        <span class="energy-rating-pill"><i class="fa-solid fa-leaf"></i> Inverter Energy Saver</span>
+                        <span class="spec-pill">437 Litres</span>
+                        <span class="spec-pill">Door Cooling+</span>
+                    </div>
+                    <div class="product-price-row">
+                        <span class="deal-tag">Save $170</span>
+                        <span class="price-main"><sup>$</sup>629<sup>00</sup></span>
+                        <span class="price-mrp">$799.00</span>
+                    </div>
+                    <div class="installation-tag"><i class="fa-solid fa-circle-check"></i> Free Brand Installation & Demo</div>
+                    <div class="prime-delivery">
+                        <span class="prime-logo-text"><i class="fa-brands fa-amazon"></i>prime</span>
+                        <span>FREE Scheduled Delivery by Tomorrow</span>
+                    </div>
+                    <div class="stock-status in-stock">✓ In Stock</div>
+                    <div class="card-actions">
+                        <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                        <button class="btn-quick-view"><i class="fa-regular fa-eye"></i> Quick Details</button>
+                    </div>
+                </div>
+
+                <!-- 9. Samsung 8.0 Kg Ecobubble Top Load -->
+                <div class="product-card" 
+                     data-title="Samsung 8.0 Kg 5 Star Ecobubble Fully-Automatic Top Load Washing Machine with Dual Storm, Soft Close Lid"
+                     data-category="washers"
+                     data-brand="Samsung"
+                     data-price="349.00"
+                     data-mrp="449.00"
+                     data-discount="22"
+                     data-rating="4.5"
+                     data-reviews="4,720"
+                     data-prime="true"
+                     data-specs="Capacity:8.0 Kg;Energy Rating:5 Star BEE High Efficiency;Technology:Ecobubble with BubbleStorm;Drum:Diamond Drum prevents fabric snagging;Motor:Digital Inverter 20-Year Warranty;Lid:Tempered Glass Soft Closing Damper">
+                    <span class="card-badge badge-deal">22% off</span>
+                    <div class="product-image-wrap">
+                        <img src="asset/appliance_washing_machine.jpg" alt="Samsung Top Load Washer" loading="lazy">
+                    </div>
+                    <div class="product-category-tag">Washing Machines • Samsung</div>
+                    <h3 class="product-title">Samsung 8.0 Kg 5-Star Ecobubble™ Top Load Washing Machine (Dual Storm™)</h3>
+                    <div class="product-rating">
+                        <span class="rating-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span>
+                        <span class="rating-count">4.5 (4,720)</span>
+                    </div>
+                    <div class="product-specs">
+                        <span class="energy-rating-pill"><i class="fa-solid fa-star"></i> 5 Star</span>
+                        <span class="spec-pill">8.0 Kg Top Load</span>
+                        <span class="spec-pill">Ecobubble™</span>
+                    </div>
+                    <div class="product-price-row">
+                        <span class="deal-tag">Deal</span>
+                        <span class="price-main"><sup>$</sup>349<sup>00</sup></span>
+                        <span class="price-mrp">$449.00</span>
+                    </div>
+                    <div class="installation-tag"><i class="fa-solid fa-circle-check"></i> Free Installation & Demo Included</div>
+                    <div class="prime-delivery">
+                        <span class="prime-logo-text"><i class="fa-brands fa-amazon"></i>prime</span>
+                        <span>FREE Scheduled Delivery</span>
+                    </div>
+                    <div class="stock-status in-stock">✓ In Stock</div>
+                    <div class="card-actions">
+                        <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                        <button class="btn-quick-view"><i class="fa-regular fa-eye"></i> Quick Details</button>
+                    </div>
+                </div>
+
+                <!-- 10. Panasonic 1.5 Ton Inverter AC with nanoe-G -->
+                <div class="product-card" 
+                     data-title="Panasonic 1.5 Ton 3-Star Wi-Fi Inverter Split AC (nanoe-G Air Purification, 7-in-1 Convertible, Copper Condenser)"
+                     data-category="airconditioners"
+                     data-brand="Panasonic"
+                     data-price="479.00"
+                     data-mrp="629.00"
+                     data-discount="24"
+                     data-rating="4.5"
+                     data-reviews="2,680"
+                     data-prime="true"
+                     data-specs="Capacity:1.5 Ton;Energy Rating:3 Star Inverter;Purification:nanoe-G Air Purifier eliminates 99% airborne particles;Smart Tech:Miraie IoT app with voice control (Alexa & Hey Google);Condenser:Shield Blu+ Anti-Corrosion pure copper;Modes:7-in-1 Convertible cooling modes">
+                    <span class="card-badge badge-deal">24% off</span>
+                    <div class="product-image-wrap">
+                        <img src="asset/box3_image.jpg" alt="Panasonic Inverter AC" loading="lazy">
+                    </div>
+                    <div class="product-category-tag">Air Conditioners • Panasonic</div>
+                    <h3 class="product-title">Panasonic 1.5 Ton Wi-Fi Inverter Split AC with nanoe-G Air Purification</h3>
+                    <div class="product-rating">
+                        <span class="rating-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span>
+                        <span class="rating-count">4.5 (2,680)</span>
+                    </div>
+                    <div class="product-specs">
+                        <span class="energy-rating-pill"><i class="fa-solid fa-star"></i> 3 Star Inverter</span>
+                        <span class="spec-pill">1.5 Ton</span>
+                        <span class="spec-pill">nanoe-G Air Clean</span>
+                        <span class="spec-pill">Wi-Fi IoT</span>
+                    </div>
+                    <div class="product-price-row">
+                        <span class="deal-tag">Save $150</span>
+                        <span class="price-main"><sup>$</sup>479<sup>00</sup></span>
+                        <span class="price-mrp">$629.00</span>
+                    </div>
+                    <div class="installation-tag"><i class="fa-solid fa-screwdriver-wrench"></i> Standard Installation Support</div>
+                    <div class="prime-delivery">
+                        <span class="prime-logo-text"><i class="fa-brands fa-amazon"></i>prime</span>
+                        <span>FREE Delivery by Friday</span>
+                    </div>
+                    <div class="stock-status in-stock">✓ In Stock</div>
+                    <div class="card-actions">
+                        <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                        <button class="btn-quick-view"><i class="fa-regular fa-eye"></i> Quick Details</button>
+                    </div>
+                </div>
+
+                <!-- 11. Philips Series 3000 Air Purifier -->
+                <div class="product-card" 
+                     data-title="Philips Series 3000 Air Purifier with NanoProtect HEPA Filter, Clean Air Delivery 400 m3/h, Real-time AQI Display"
+                     data-category="vacuums"
+                     data-brand="Philips"
+                     data-price="229.00"
+                     data-mrp="299.00"
+                     data-discount="23"
+                     data-rating="4.7"
+                     data-reviews="6,400"
+                     data-prime="true"
+                     data-specs="Coverage:Rooms up to 520 sq ft (cleans in under 8 mins);CADR:400 m3/h Clean Air Delivery Rate;Filtration:3-Layer NanoProtect HEPA (captures 99.97% particles down to 0.003 microns);Display:Real-time numerical PM2.5, allergen & gas indicator;Noise:Ultra-quiet Sleep mode at 15 dB;Energy:Low energy consumption (under 55W max)">
+                    <span class="card-badge badge-choice">Amazon's <span>Choice</span></span>
+                    <div class="product-image-wrap">
+                        <img src="asset/box3_image.jpg" alt="Philips Series 3000 Air Purifier" loading="lazy">
+                    </div>
+                    <div class="product-category-tag">Air Purifiers • Philips</div>
+                    <h3 class="product-title">Philips Series 3000 Smart HEPA Air Purifier (Cleans 520 sq ft, 400 m³/h CADR)</h3>
+                    <div class="product-rating">
+                        <span class="rating-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span>
+                        <span class="rating-count">4.7 (6,400)</span>
+                    </div>
+                    <div class="product-specs">
+                        <span class="energy-rating-pill"><i class="fa-solid fa-leaf"></i> 55W Eco Purifier</span>
+                        <span class="spec-pill">HEPA NanoProtect</span>
+                        <span class="spec-pill">520 sq ft Coverage</span>
+                    </div>
+                    <div class="product-price-row">
+                        <span class="deal-tag">23% off</span>
+                        <span class="price-main"><sup>$</sup>229<sup>00</sup></span>
+                        <span class="price-mrp">$299.00</span>
+                    </div>
+                    <div class="prime-delivery">
+                        <span class="prime-logo-text"><i class="fa-brands fa-amazon"></i>prime</span>
+                        <span>FREE Next-Day Delivery</span>
+                    </div>
+                    <div class="stock-status in-stock">✓ In Stock</div>
+                    <div class="card-actions">
+                        <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                        <button class="btn-quick-view"><i class="fa-regular fa-eye"></i> Quick Details</button>
+                    </div>
+                </div>
+
+                <!-- 12. Haier 30L Multi-Function OTG Oven -->
+                <div class="product-card" 
+                     data-title="Haier 30-Litre Multi-Function Oven Toaster Griller (OTG) with Motorized Rotisserie, Convection, 4 Heating Modes"
+                     data-category="kitchen"
+                     data-brand="Haier"
+                     data-price="89.00"
+                     data-mrp="129.00"
+                     data-discount="31"
+                     data-rating="4.4"
+                     data-reviews="1,920"
+                     data-prime="true"
+                     data-specs="Capacity:30 Litres (Ideal for baking 10-inch cakes, pizzas);Rotisserie:Motorized 360-degree Rotisserie for uniform roasting;Heating:4 Stage heating element selector;Temperature:100C to 250C Adjustable Thermostat;Accessories:Baking tray, Wire rack, Rotisserie rod, Crumb tray, Handle tools">
+                    <span class="card-badge badge-bestseller">Great Value</span>
+                    <div class="product-image-wrap">
+                        <img src="asset/box3_image.jpg" alt="Haier 30L OTG Oven" loading="lazy">
+                    </div>
+                    <div class="product-category-tag">Kitchen Appliances • Haier</div>
+                    <h3 class="product-title">Haier 30L Multi-Function OTG Oven with Motorized Rotisserie & Convection</h3>
+                    <div class="product-rating">
+                        <span class="rating-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
+                        <span class="rating-count">4.4 (1,920)</span>
+                    </div>
+                    <div class="product-specs">
+                        <span class="spec-pill">30 Litres</span>
+                        <span class="spec-pill">Motorized Rotisserie</span>
+                        <span class="spec-pill">Baking & Grilling</span>
+                    </div>
+                    <div class="product-price-row">
+                        <span class="deal-tag">31% off</span>
+                        <span class="price-main"><sup>$</sup>89<sup>00</sup></span>
+                        <span class="price-mrp">$129.00</span>
+                    </div>
+                    <div class="prime-delivery">
+                        <span class="prime-logo-text"><i class="fa-brands fa-amazon"></i>prime</span>
+                        <span>FREE Scheduled Delivery</span>
+                    </div>
+                    <div class="stock-status in-stock">✓ In Stock</div>
+                    <div class="card-actions">
+                        <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                        <button class="btn-quick-view"><i class="fa-regular fa-eye"></i> Quick Details</button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Quick View Details Modal -->
+    <div class="modal-overlay" id="quickViewModal">
+        <div class="modal-content">
+            <button class="modal-close-btn" title="Close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-grid">
+                <div class="modal-image-col">
+                    <img id="modalProductImg" src="" alt="Appliance Detail">
+                </div>
+                <div class="modal-details-col">
+                    <div class="product-category-tag" id="modalCategoryTag">APPLIANCES</div>
+                    <h2 id="modalProductTitle">Appliance Title</h2>
+                    <div class="product-rating">
+                        <span class="rating-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                        <span class="rating-count" id="modalRatingCount">4.7 (2,100 ratings)</span>
+                    </div>
+                    <div class="product-price-row" style="margin: 12px 0;">
+                        <span class="price-main" id="modalPrice">$0.00</span>
+                        <span class="price-mrp" id="modalMrp">$0.00</span>
+                        <span class="deal-tag" id="modalDiscount">Deal</span>
+                    </div>
+                    <div class="installation-tag"><i class="fa-solid fa-circle-check"></i> Free Installation & Scheduled Delivery</div>
+
+                    <h4 style="margin: 15px 0 6px;">Technical Specifications & Key Features:</h4>
+                    <table class="modal-specs-table">
+                        <tbody id="modalSpecsBody">
+                            <!-- Populated dynamically via shop.js -->
+                        </tbody>
+                    </table>
+
+                    <div style="display:flex; align-items:center; gap: 10px; margin: 15px 0;">
+                        <label for="modalQtySelect"><strong>Quantity:</strong></label>
+                        <select id="modalQtySelect" style="padding: 4px 8px; border-radius: 4px; border: 1px solid #ccc;">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+
+                    <div class="modal-actions">
+                        <button class="btn-add-cart" id="modalAddToCartBtn" style="padding: 10px 24px;">
+                            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="cart-toast" id="cartToast"></div>
+
+    <!-- Amazon Footer -->
+    <footer>
+        <div class="foot-panel1">Back to Top</div>
+        <div class="foot-panel2">
+            <ul>
+                <p>Get to Know Us</p>
+                <a href="#">About Amazon</a>
+                <a href="#">Careers</a>
+                <a href="#">Press Releases</a>
+                <a href="#">Amazon Science</a>
+            </ul>
+            <ul>
+                <p>Connect with Us</p>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </ul>
+            <ul>
+                <p>Make Money with Us</p>
+                <a href="#">Sell on Amazon</a>
+                <a href="#">Sell under Amazon Accelerator</a>
+                <a href="#">Protect and Build Your Brand</a>
+                <a href="#">Amazon Global Selling</a>
+                <a href="#">Become an Affiliate</a>
+            </ul>
+            <ul>
+                <p>Let Us Help You</p>
+                <a href="#">COVID-19 and Amazon</a>
+                <a href="login.html">Your Account</a>
+                <a href="#">Your Orders</a>
+                <a href="#">Returns & Replacements</a>
+                <a href="#">Amazon Assistant</a>
+                <a href="#">Help</a>
+            </ul>
+        </div>
+        <div class="foot-panel3">
+            <div class="logo"></div>
+            <div class="details">
+                <button><i class="fa-solid fa-globe"></i> English</button>
+                <button><i class="fa-solid fa-dollar-sign"></i> USD - U.S. Dollar</button>
+                <button><i class="fa-solid fa-flag-usa"></i> United States</button>
+            </div>
+        </div>
+        <div class="foot-panel4">
+            <div class="pages">
+                <a href="#">Conditions of Use</a>
+                <a href="#">Privacy Notice</a>
+                <a href="#">Interest-Based Ads</a>
+            </div>
+            <div class="copyright"><i class="fa-regular fa-copyright"></i> 1996-2026, Amazon.com, Inc. or its affiliates</div>
+        </div>
+    </footer>
+
+    <script src="shop.js"></script>
+</body>
+</html>

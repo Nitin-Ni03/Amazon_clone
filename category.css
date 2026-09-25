@@ -877,6 +877,47 @@ a:hover {
     color: #febd69;
 }
 
+/* Energy & Appliance Badges */
+.badge-energy-5star {
+    background: linear-gradient(135deg, #0b8043 0%, #067d62 100%);
+    color: white;
+}
+
+.energy-rating-pill {
+    background-color: #e6f4ea;
+    color: #137333;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 4px;
+    border: 1px solid #ceead6;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.exchange-offer-text {
+    font-size: 0.78rem;
+    color: #b12704;
+    font-weight: 600;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.installation-tag {
+    font-size: 0.78rem;
+    color: #007185;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.installation-tag i {
+    color: #067d62;
+    margin-right: 3px;
+}
+
 /* Responsive adjustments */
 @media (max-width: 1024px) {
     .store-container {
@@ -910,3 +951,4 @@ a:hover {
         grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     }
 }
+
