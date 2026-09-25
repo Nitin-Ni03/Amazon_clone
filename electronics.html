@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon.in: Electronics - Laptops, Smartphones, Audio & Wearables</title>
+    <link rel="icon" type="image/png" href="asset/amazon-icon-4.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="category.css">
+</head>
+<body>
+
+    <!-- Amazon Top Header -->
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="nav-logo" title="Amazon Home">
+                <div class="logo"></div>
+            </a>
+
+            <div class="nav-address">
+                <p class="add-first">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-second">India</p>
+                </div>
+            </div>
+
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>Electronics</option>
+                    <option>All</option>
+                    <option>Appliances</option>
+                </select>
+                <input type="text" placeholder="Search Electronics, Laptops, Phones, Headphones..." class="search-input">
+                <div class="search-icon" title="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <a href="login.html" class="nav-signin" style="color:white; text-decoration:none;">
+                <p class="nav-first">Hello, sign in</p>
+                <p class="nav-second">Account & Lists</p>
+            </a>
+
+            <div class="nav-return">
+                <p class="nav-first">Returns</p>
+                <p class="nav-second">& Orders</p>
+            </div>
+
+            <div class="nav-cart" title="Shopping Cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+                <span class="cart-count-badge">0</span>
+            </div>
+        </div>
+
+        <!-- Navigation Sub-panel -->
+        <div class="panel">
+            <div class="panel-all">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+            <div class="panel-options">
+                <a href="index.html">Home</a>
+                <a href="electronics.html" class="active">Electronics</a>
+                <a href="appliances.html">Home Appliances</a>
+                <a href="electronics.html">Mobiles</a>
+                <a href="index.html">Today's Deals</a>
+                <a href="login.html">Sign In</a>
+                <a href="index.html">Customer Service</a>
+            </div>
+            <div class="panel-deals">
+                <a href="electronics.html" style="color:#febd69; text-decoration:none; font-weight:700;">
+                    <i class="fa-solid fa-bolt"></i> Mega Tech Deals: Up to 45% Off
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Electronics Hero Promotional Banner -->
+    <section class="category-hero">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <span class="hero-badge-tag"><i class="fa-solid fa-microchip"></i> Electronics Store</span>
+                <h1>Upgrade Your Tech Experience</h1>
+                <p>Explore cutting-edge laptops, flagship smartphones, studio-grade audio, and smart wearables with exclusive Prime delivery and manufacturer warranties.</p>
+            </div>
+            <div class="hero-perks">
+                <div class="hero-perk-item">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <div class="hero-perk-text">
+                        <span>PRIME BENEFIT</span>
+                        <strong>Free 1-Day Delivery</strong>
+                    </div>
+                </div>
+                <div class="hero-perk-item">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <div class="hero-perk-text">
+                        <span>BUY WITH CONFIDENCE</span>
+                        <strong>100% Genuine Tech</strong>
+                    </div>
+                </div>
+                <div class="hero-perk-item">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <div class="hero-perk-text">
+                        <span>EASY FINANCING</span>
+                        <strong>No-Cost EMI Options</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subcategory Pills Filter -->
+    <div class="category-subnav">
+        <div class="subnav-container">
+            <button class="subnav-pill active" data-category="all"><i class="fa-solid fa-border-all"></i> All Electronics</button>
+            <button class="subnav-pill" data-category="laptops"><i class="fa-solid fa-laptop"></i> Laptops & Computers</button>
+            <button class="subnav-pill" data-category="smartphones"><i class="fa-solid fa-mobile-screen"></i> Smartphones</button>
+            <button class="subnav-pill" data-category="audio"><i class="fa-solid fa-headphones"></i> Audio & Headphones</button>
+            <button class="subnav-pill" data-category="smartwatches"><i class="fa-solid fa-clock"></i> Smartwatches</button>
+            <button class="subnav-pill" data-category="tablets"><i class="fa-solid fa-tablet-screen-button"></i> Tablets</button>
+            <button class="subnav-pill" data-category="cameras"><i class="fa-solid fa-camera"></i> Cameras & Photography</button>
+        </div>
+    </div>
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb-container" aria-label="breadcrumb">
+        <a href="index.html">Home</a> <span>›</span>
+        <a href="electronics.html">Electronics</a> <span>›</span>
+        <span>Computers, Smart Tech & Audio Store</span>
+    </nav>
+
+    <!-- Store Content Layout -->
+    <div class="store-container">
+
+        <!-- Sidebar Filters -->
+        <aside class="sidebar-filters">
+            <div class="filter-section">
+                <div class="filter-title">Department</div>
+                <ul class="filter-list">
+                    <li><label><input type="radio" name="category" value="all" checked> All Electronics</label></li>
+                    <li><label><input type="radio" name="category" value="laptops"> Laptops & Ultrabooks</label></li>
+                    <li><label><input type="radio" name="category" value="smartphones"> Flagship Smartphones</label></li>
+                    <li><label><input type="radio" name="category" value="audio"> Headphones & Speakers</label></li>
+                    <li><label><input type="radio" name="category" value="smartwatches"> Smartwatches & Fitness</label></li>
+                    <li><label><input type="radio" name="category" value="cameras"> Cameras & Gear</label></li>
+                </ul>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-title">Prime Eligible</div>
+                <ul class="filter-list">
+                    <li>
+                        <label>
+                            <input type="checkbox" name="primeOnly">
+                            <span class="prime-filter-badge"><i class="fa-brands fa-amazon"></i>prime</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-title">Brands</div>
+                <ul class="filter-list">
+                    <li><label><input type="checkbox" name="brand" value="Apple"> Apple</label></li>
+                    <li><label><input type="checkbox" name="brand" value="Samsung"> Samsung</label></li>
+                    <li><label><input type="checkbox" name="brand" value="Sony"> Sony</label></li>
+                    <li><label><input type="checkbox" name="brand" value="Dell"> Dell</label></li>
+                    <li><label><input type="checkbox" name="brand" value="Bose"> Bose</label></li>
+                    <li><label><input type="checkbox" name="brand" value="OnePlus"> OnePlus</label></li>
+                    <li><label><input type="checkbox" name="brand" value="HP"> HP</label></li>
+                    <li><label><input type="checkbox" name="brand" value="boAt"> boAt</label></li>
+                </ul>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-title">Customer Reviews</div>
+                <ul class="filter-list">
+                    <li>
+                        <label>
+                            <span class="star-rating-filter">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                                <span>& Up</span>
+                            </span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <span class="star-rating-filter">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                                <span>& Up</span>
+                            </span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-title">Price Filter</div>
+                <div class="price-inputs">
+                    <input type="number" id="minPrice" placeholder="$ Min" min="0">
+                    <span>-</span>
+                    <input type="number" id="maxPrice" placeholder="$ Max" min="0">
+                    <button class="price-btn" id="priceGoBtn">Go</button>
+                </div>
+            </div>
+
+            <button class="clear-filters-btn"><i class="fa-solid fa-rotate-left"></i> Reset All Filters</button>
+        </aside>
+
+        <!-- Main Product Section -->
+        <main class="products-main">
+            <!-- Results & Sorting Toolbar -->
+            <div class="results-toolbar">
+                <div class="results-count">
+                    Showing <strong>12</strong> of 12 tech products
+                </div>
+                <div class="sort-wrapper">
+                    <label for="sortSelect">Sort by:</label>
+                    <select id="sortSelect" class="sort-select">
+                        <option value="featured">Featured Deals</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="rating">Avg. Customer Review</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="products-grid">
+
+                <!-- 1. Apple MacBook Pro 16 -->
+                <div class="product-card" 
+                     data-title="Apple MacBook Pro 16-inch M3 Pro Chip (18GB Unified Memory, 512GB SSD Storage, Liquid Retina XDR Display, Space Black)"
+                     data-category="laptops"
+                     data-brand="Apple"
+                     data-price="2499.00"
+                     data-mrp="2899.00"
+                     data-discount="14"
+                     data-rating="4.9"
+                     data-reviews="3,842"
+                     data-prime="true"
+                     data-specs="Processor:Apple M3 Pro 12-Core;Memory:18GB Unified RAM;Storage:512GB Superfast SSD;Display:16.2-inch Liquid Retina XDR;Battery:Up to 22 hours;Color:Space Black;Warranty:1-Year Apple Care">
+                    <span class="card-badge badge-bestseller">#1 Best Seller</span>
+                    <div class="product-image-wrap">
+                        <img src="asset/elec_laptop.jpg" alt="Apple MacBook Pro 16" loading="lazy">
+                    </div>
+                    <div class="product-category-tag">Laptops & Desktops • Apple</div>
+                    <h3 class="product-title">Apple MacBook Pro 16-inch M3 Pro Chip (18GB RAM, 512GB SSD, Liquid Retina XDR)</h3>
+                    <div class="product-rating">
+                        <span class="rating-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                        <span class="rating-count">4.9 (3,842)</span>
+                    </div>
+                    <div class="product-specs">
+                        <span class="spec-pill">Apple M3 Pro</span>
+                        <span class="spec-pill">18GB RAM</span>
+                        <span class="spec-pill">512GB SSD</span>
+                        <span class="spec-pill">16.2" XDR</span>
+                    </div>
+                    <div class="product-price-row">
+                        <span class="deal-tag">Save $400</span>
+                        <span class="price-main"><sup>$</sup>2,499<sup>00</sup></span>
+                        <span class="price-mrp">$2,899.00</span>
+                    </div>
+                    <div class="prime-delivery">
+                        <span class="prime-logo-text"><i class="fa-brands fa-amazon"></i>prime</span>
+                        <span>Get it by <strong>Tomorrow, 11 AM</strong></span>
+                    </div>
+                    <div class="stock-status in-stock">✓ In Stock</div>
+                    <div class="card-actions">
+                        <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                        <button class="btn-quick-view"><i class="fa-regular fa-eye"></i> Quick Details</button>
+                    </div>
+                </div>
+
+                <!-- 2. Sony WH-1000XM5 -->
+                <div class="product-card" 
+                     data-title="Sony WH-1000XM5 Wireless Industry Leading Noise Canceling Headphones with Auto NC Optimizer, Mic for Hands-Free Calling"
+                     data-category="audio"
+                     data-brand="Sony"
+                     data-price="348.00"
+                     data-mrp="399.99"
+                     data-discount="13"
+                     data-rating="4.7"
+                     data-reviews="14,290"
+                     data-prime="true"
+                     data-specs="Noise Cancellation:Industry Leading Auto NC Optimizer;Battery Life:Up to 30 Hours;Driver:30mm Precision Driver;Connectivity:Bluetooth 5.2, Multipoint;Weight:250g Lightweight;Warranty:1-Year Sony Warranty">
+                    <span class="card-badge badge-choice">Amazon's <span>Choice</span></span>
+                    <div class="product-image-wrap">
+                        <img src="asset/elec_headphones.jpg" alt="Sony WH-1000XM5 Headphones" loading="lazy">
+                    </div>
+                    <div class="product-category-tag">Audio & Headphones • Sony</div>
+                    <h3 class="product-title">Sony WH-1000XM5 Premium Noise Canceling Wireless Over-Ear Headphones</h3>
+                    <div class="product-rating">
+                        <span class="rating-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span>
+                        <span class="rating-count">4.7 (14,290)</span>
+                    </div>
+                    <div class="product-specs">
+                        <span class="spec-pill">Active Noise Cancelling</span>
+                        <span class="spec-pill">30h Battery</span>
+                        <span class="spec-pill">Hi-Res Audio</span>
+                    </div>
+                    <div class="product-price-row">
+                        <span class="deal-tag">13% off</span>
+                        <span class="price-main"><sup>$</sup>348<sup>00</sup></span>
+                        <span class="price-mrp">$399.99</span>
+                    </div>
+                    <div class="prime-delivery">
+                        <span class="prime-logo-text"><i class="fa-brands fa-amazon"></i>prime</span>
+                        <span>FREE One-Day Delivery</span>
+                    </div>
+                    <div class="stock-status in-stock">✓ In Stock</div>
+                    <div class="card-actions">
+                        <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                        <button class="btn-quick-view"><i class="fa-regular fa-eye"></i> Quick Details</button>
+                    </div>
+                </div>
+
+                <!-- 3. Samsung Galaxy S24 Ultra -->
+                <div class="product-card" 
+                     data-title="Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB RAM, 256GB Storage, 200MP Camera, S Pen Included)"
+                     data-category="smartphones"
+                     data-brand="Samsung"
+                     data-price="1199.99"
+                     data-mrp="1299.99"
+                     data-discount="8"
+                     data-rating="4.8"
+                     data-reviews="9,140"
+                     data-prime="true"
+                     data-specs="Display:6.8-inch Dynamic AMOLED 2X 120Hz;Processor:Snapdragon 8 Gen 3 for Galaxy;Camera:200MP Quad Telephoto System;Battery:5000 mAh All-Day;RAM:12GB;Storage:256GB;S Pen:Built-in Stylus">
+                    <span class="card-badge badge-deal">Limited Time Deal</span>
+                    <div class="product-image-wrap">
+                        <img src="asset/elec_smartphone.jpg" alt="Samsung Galaxy S24 Ultra" loading="lazy">
+                    </div>
+                    <div class="product-category-tag">Smartphones • Samsung</div>
+                    <h3 class="product-title">Samsung Galaxy S24 Ultra 5G AI Flagship (12GB RAM, 256GB, 200MP Camera, S-Pen)</h3>
+                    <div class="product-rating">
+                        <span class="rating-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                        <span class="rating-count">4.8 (9,140)</span>
+                    </div>
+                    <div class="product-specs">
+                        <span class="spec-pill">Snapdragon 8 Gen 3</span>
+                        <span class="spec-pill">200MP AI Camera</span>
+                        <span class="spec-pill">5000mAh</span>
+                    </div>
+                    <div class="product-price-row">
+                        <span class="deal-tag">Deal</span>
+                        <span class="price-main"><sup>$</sup>1,199<sup>99</sup></span>
+                        <span class="price-mrp">$1,299.99</span>
+                    </div>
+                    <div class="prime-delivery">
+                        <span class="prime-logo-text"><i class="fa-brands fa-amazon"></i>prime</span>
+                        <span>FREE Same-Day Delivery available</span>
+                    </div>
+                    <div class="stock-status in-stock">✓ In Stock</div>
+                    <div class="card-actions">
+                        <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                        <button class="btn-quick-view"><i class="fa-regular fa-eye"></i> Quick Details</button>
+                    </div>
+                </div>
+
+                <!-- 4. Apple Watch Series 9 -->
+                <div class="product-card" 
+                     data-title="Apple Watch Series 9 GPS 45mm Midnight Aluminum Case with Midnight Sport Band, S9 Chip, Double Tap Gesture"
+                     data-category="smartwatches"
+                     data-brand="Apple"
+                     data-price="399.00"
+                     data-mrp="429.00"
+                     data-discount="7"
+                     data-rating="4.8"
+                     data-reviews="6,710"
+                     data-prime="true"
+                     data-specs="Case Size:45mm Aluminum;Chip:S9 SiP with 4-Core Neural Engine;Sensors:Blood Oxygen, ECG, Temperature;Water Resistance:50m Water Resistant;Battery:18 Hours Normal, 36 Hours Low Power">
+                    <span class="card-badge badge-bestseller">Best Seller</span>
+                    <div class="product-image-wrap">
+                        <img src="asset/elec_smartwatch.jpg" alt="Apple Watch Series 9" loading="lazy">
+                    </div>
+                    <div class="product-category-tag">Smartwatches • Apple</div>
+                    <h3 class="product-title">Apple Watch Series 9 [GPS 45mm] Smartwatch with Midnight Aluminum Case</h3>
+                    <div class="product-rating">
+                        <span class="rating-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                        <span class="rating-count">4.8 (6,710)</span>
+                    </div>
+                    <div class="product-specs">
+                        <span class="spec-pill">Always-On Retina</span>
+                        <span class="spec-pill">S9 SiP</span>
+                        <span class="spec-pill">ECG & SpO2</span>
+                    </div>
+                    <div class="product-price-row">
+                        <span class="price-main"><sup>$</sup>399<sup>00</sup></span>
+                        <span class="price-mrp">$429.00</span>
+                        <span class="price-discount">(7% off)</span>
+                    </div>
+                    <div class="prime-delivery">
+                        <span class="prime-logo-text"><i class="fa-brands fa-amazon"></i>prime</span>
+                        <span>Get it by <strong>Tomorrow</strong></span>
+                    </div>
+                    <div class="stock-status in-stock">✓ In Stock</div>
+                    <div class="card-actions">
+                        <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                        <button class="btn-quick-view"><i class="fa-regular fa-eye"></i> Quick Details</button>
+                    </div>
+                </div>
+
+                <!-- 5. Dell XPS 15 9530 -->
+                <div class="product-card" 
+                     data-title="Dell XPS 15 9530 Laptop (13th Gen Intel Core i7-13700H, 32GB DDR5 RAM, 1TB NVMe SSD, NVIDIA GeForce RTX 4060, 15.6 FHD+)"
+                     data-category="laptops"
+                     data-brand="Dell"
+                     data-price="1899.00"
+                     data-mrp="2199.00"
+                     data-discount="14"
+                     data-rating="4.6"
+                     data-reviews="2,310"
+                     data-prime="true"
+                     data-specs="Processor:Intel Core i7-13700H (14-Cores);Graphics:NVIDIA GeForce RTX 4060 8GB;Memory:32GB DDR5 4800MHz;Storage:1TB PCIe NVMe Gen4 SSD;Screen:15.6 FHD+ 500-Nit InfinityEdge;OS:Windows 11 Pro">
+                    <span class="card-badge badge-choice">Amazon's <span>Choice</span></span>
+                    <div class="product-image-wrap">
+                        <img src="asset/elec_laptop.jpg" alt="Dell XPS 15 Laptop" loading="lazy">
+                    </div>
+                    <div class="product-category-tag">Laptops & Desktops • Dell</div>
+                    <h3 class="product-title">Dell XPS 15 Creator Laptop (Intel i7 13th Gen, 32GB RAM, 1TB SSD, RTX 4060)</h3>
+                    <div class="product-rating">
+                        <span class="rating-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span>
+                        <span class="rating-count">4.6 (2,310)</span>
+                    </div>
+                    <div class="product-specs">
+                        <span class="spec-pill">Intel i7 14-Core</span>
+                        <span class="spec-pill">32GB RAM</span>
+                        <span class="spec-pill">RTX 4060 GPU</span>
+                    </div>
+                    <div class="product-price-row">
+                        <span class="deal-tag">Save $300</span>
+                        <span class="price-main"><sup>$</sup>1,899<sup>00</sup></span>
+                        <span class="price-mrp">$2,199.00</span>
+                    </div>
+                    <div class="prime-delivery">
+                        <span class="prime-logo-text"><i class="fa-brands fa-amazon"></i>prime</span>
+                        <span>FREE Two-Day Shipping</span>
+                    </div>
+                    <div class="stock-status low-stock">⚡ Only 4 left in stock - order soon</div>
+                    <div class="card-actions">
+                        <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                        <button class="btn-quick-view"><i class="fa-regular fa-eye"></i> Quick Details</button>
+                    </div>
+                </div>
+
+                <!-- 6. Bose QuietComfort Ultra -->
+                <div class="product-card" 
+                     data-title="Bose QuietComfort Ultra Wireless Noise Cancelling Earbuds with Spatial Audio and CustomTune Technology"
+                     data-category="audio"
+                     data-brand="Bose"
+                     data-price="299.00"
+                     data-mrp="349.00"
+                     data-discount="14"
+                     data-rating="4.6"
+                     data-reviews="5,420"
+                     data-prime="true"
+                     data-specs="Audio:Immersive Spatial Audio;Noise Cancelling:World-Class Active ANC;Microphones:9 Microphones for Crystal Calls;Battery:6 Hours + 18h Charging Case;Resistance:IPX4 Water-Resistant">
+                    <span class="card-badge badge-deal">14% off</span>
+                    <div class="product-image-wrap">
+                        <img src="asset/elec_headphones.jpg" alt="Bose QuietComfort Ultra" loading="lazy">
+                    </div>
+                    <div class="product-category-tag">Audio & Headphones • Bose</div>
+                    <h3 class="product-title">Bose QuietComfort Ultra Wireless Earbuds with Spatial Audio & Active ANC</h3>
+                    <div class="product-rating">
+                        <span class="rating-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span>
+                        <span class="rating-count">4.6 (5,420)</span>
+                    </div>
+                    <div class="product-specs">
+                        <span class="spec-pill">Spatial Audio</span>
+                        <span class="spec-pill">World-Class ANC</span>
+                        <span class="spec-pill">CustomTune</span>
+                    </div>
+                    <div class="product-price-row">
+                        <span class="deal-tag">Deal</span>
+                        <span class="price-main"><sup>$</sup>299<sup>00</sup></span>
+                        <span class="price-mrp">$349.00</span>
+                    </div>
+                    <div class="prime-delivery">
+                        <span class="prime-logo-text"><i class="fa-brands fa-amazon"></i>prime</span>
+                        <span>FREE Next-Day Delivery</span>
+                    </div>
+                    <div class="stock-status in-stock">✓ In Stock</div>
+                    <div class="card-actions">
+                        <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                        <button class="btn-quick-view"><i class="fa-regular fa-eye"></i> Quick Details</button>
+                    </div>
+                </div>
+
+                <!-- 7. OnePlus 12 5G -->
+                <div class="product-card" 
+                     data-title="OnePlus 12 5G (Flowy Emerald, 16GB RAM, 512GB Storage, Snapdragon 8 Gen 3, 50MP 3x Periscope Camera, 100W SUPERVOOC Charging)"
+                     data-category="smartphones"
+                     data-brand="OnePlus"
+                     data-price="899.99"
+                     data-mrp="999.99"
+                     data-discount="10"
+                     data-rating="4.7"
+                     data-reviews="4,120"
+                     data-prime="true"
+                     data-specs="Processor:Qualcomm Snapdragon 8 Gen 3;Charging:100W Wired + 50W Wireless;Battery:5400 mAh Dual-cell;Display:6.82 2K 120Hz ProXDR Display;Camera:4th Gen Hasselblad Camera for Mobile;Storage:512GB UFS 4.0">
+                    <span class="card-badge badge-bestseller">Top Rated</span>
+                    <div class="product-image-wrap">
+                        <img src="asset/elec_smartphone.jpg" alt="OnePlus 12 5G" loading="lazy">
+                    </div>
+                    <div class="product-category-tag">Smartphones • OnePlus</div>
+                    <h3 class="product-title">OnePlus 12 5G (16GB RAM, 512GB Storage, 100W SUPERVOOC Fast Charge)</h3>
+                    <div class="product-rating">
+                        <span class="rating-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span>
+                        <span class="rating-count">4.7 (4,120)</span>
+                    </div>
+                    <div class="product-specs">
+                        <span class="spec-pill">16GB RAM</span>
+                        <span class="spec-pill">100W Fast Charge</span>
+                        <span class="spec-pill">Hasselblad Optics</span>
+                    </div>
+                    <div class="product-price-row">
+                        <span class="deal-tag">10% off</span>
+                        <span class="price-main"><sup>$</sup>899<sup>99</sup></span>
+                        <span class="price-mrp">$999.99</span>
+                    </div>
+                    <div class="prime-delivery">
+                        <span class="prime-logo-text"><i class="fa-brands fa-amazon"></i>prime</span>
+                        <span>FREE One-Day Delivery</span>
+                    </div>
+                    <div class="stock-status in-stock">✓ In Stock</div>
+                    <div class="card-actions">
+                        <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                        <button class="btn-quick-view"><i class="fa-regular fa-eye"></i> Quick Details</button>
+                    </div>
+                </div>
+
+                <!-- 8. HP Envy x360 -->
+                <div class="product-card" 
+                     data-title="HP Envy x360 2-in-1 15.6 FHD Touchscreen Laptop (Intel Core Ultra 7 155U, 16GB RAM, 512GB SSD, Backlit Keyboard, Windows 11)"
+                     data-category="laptops"
+                     data-brand="HP"
+                     data-price="949.00"
+                     data-mrp="1149.00"
+                     data-discount="17"
+                     data-rating="4.5"
+                     data-reviews="1,840"
+                     data-prime="true"
+                     data-specs="Processor:Intel Core Ultra 7 155U with AI Boost;Design:2-in-1 360-degree Convertible Hinge;RAM:16GB LPDDR5x;Storage:512GB PCIe NVMe M.2 SSD;Display:15.6 FHD IPS Touchscreen 400 nits">
+                    <span class="card-badge badge-choice">Amazon's <span>Choice</span></span>
+                    <div class="product-image-wrap">
+                        <img src="asset/elec_laptop.jpg" alt="HP Envy x360 2-in-1 Laptop" loading="lazy">
+                    </div>
+                    <div class="product-category-tag">Laptops & Desktops • HP</div>
+                    <h3 class="product-title">HP Envy x360 2-in-1 Touchscreen Laptop (Intel Core Ultra 7, 16GB RAM, 512GB SSD)</h3>
+                    <div class="product-rating">
+                        <span class="rating-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span>
+                        <span class="rating-count">4.5 (1,840)</span>
+                    </div>
+                    <div class="product-specs">
+                        <span class="spec-pill">Intel Core Ultra 7</span>
+                        <span class="spec-pill">Touchscreen 2-in-1</span>
+                        <span class="spec-pill">16GB RAM</span>
+                    </div>
+                    <div class="product-price-row">
+                        <span class="deal-tag">Save $200</span>
+                        <span class="price-main"><sup>$</sup>949<sup>00</sup></span>
+                        <span class="price-mrp">$1,149.00</span>
+                    </div>
+                    <div class="prime-delivery">
+                        <span class="prime-logo-text"><i class="fa-brands fa-amazon"></i>prime</span>
+                        <span>FREE Scheduled Delivery</span>
+                    </div>
+                    <div class="stock-status in-stock">✓ In Stock</div>
+                    <div class="card-actions">
+                        <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                        <button class="btn-quick-view"><i class="fa-regular fa-eye"></i> Quick Details</button>
+                    </div>
+                </div>
+
+                <!-- 9. Samsung Galaxy Watch 6 Classic -->
+                <div class="product-card" 
+                     data-title="Samsung Galaxy Watch 6 Classic 47mm Bluetooth Smartwatch with Rotating Bezel, ECG Monitor, Sleep Coaching, Black"
+                     data-category="smartwatches"
+                     data-brand="Samsung"
+                     data-price="329.99"
+                     data-mrp="399.99"
+                     data-discount="18"
+                     data-rating="4.6"
+                     data-reviews="7,820"
+                     data-prime="true"
+                     data-specs="Design:Stainless Steel with Physical Rotating Bezel;Display:1.5 Sapphire Crystal AMOLED;Sensors:BioActive Sensor (HR, ECG, BIA);Battery:Up to 40 hours;OS:Wear OS Powered by Samsung">
+                    <span class="card-badge badge-deal">18% off</span>
+                    <div class="product-image-wrap">
+                        <img src="asset/elec_smartwatch.jpg" alt="Samsung Galaxy Watch 6" loading="lazy">
+                    </div>
+                    <div class="product-category-tag">Smartwatches • Samsung</div>
+                    <h3 class="product-title">Samsung Galaxy Watch 6 Classic 47mm Smartwatch with Rotating Bezel</h3>
+                    <div class="product-rating">
+                        <span class="rating-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span>
+                        <span class="rating-count">4.6 (7,820)</span>
+                    </div>
+                    <div class="product-specs">
+                        <span class="spec-pill">Rotating Bezel</span>
+                        <span class="spec-pill">Advanced Sleep Coach</span>
+                        <span class="spec-pill">Sapphire Crystal</span>
+                    </div>
+                    <div class="product-price-row">
+                        <span class="deal-tag">Deal</span>
+                        <span class="price-main"><sup>$</sup>329<sup>99</sup></span>
+                        <span class="price-mrp">$399.99</span>
+                    </div>
+                    <div class="prime-delivery">
+                        <span class="prime-logo-text"><i class="fa-brands fa-amazon"></i>prime</span>
+                        <span>FREE Next-Day Delivery</span>
+                    </div>
+                    <div class="stock-status in-stock">✓ In Stock</div>
+                    <div class="card-actions">
+                        <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                        <button class="btn-quick-view"><i class="fa-regular fa-eye"></i> Quick Details</button>
+                    </div>
+                </div>
+
+                <!-- 10. boAt Rockerz 450 Bluetooth -->
+                <div class="product-card" 
+                     data-title="boAt Rockerz 450 Bluetooth On Ear Headphones with Mic, Up to 15 Hours Playback, 40mm Drivers, Padded Ear Cushions"
+                     data-category="audio"
+                     data-brand="boAt"
+                     data-price="29.99"
+                     data-mrp="59.99"
+                     data-discount="50"
+                     data-rating="4.3"
+                     data-reviews="64,200"
+                     data-prime="true"
+                     data-specs="Playback Time:Up to 15 Hours;Driver:40mm Dynamic Drivers;Design:Foldable Lightweight Ergonomic;Controls:Easy Access Physical Buttons;Connectivity:Bluetooth v5.0 and AUX">
+                    <span class="card-badge badge-bestseller">50% OFF</span>
+                    <div class="product-image-wrap">
+                        <img src="asset/elec_headphones.jpg" alt="boAt Rockerz 450" loading="lazy">
+                    </div>
+                    <div class="product-category-tag">Audio & Headphones • boAt</div>
+                    <h3 class="product-title">boAt Rockerz 450 Bluetooth On-Ear Headphones with HD Sound & Mic</h3>
+                    <div class="product-rating">
+                        <span class="rating-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
+                        <span class="rating-count">4.3 (64,200)</span>
+                    </div>
+                    <div class="product-specs">
+                        <span class="spec-pill">40mm Bass Drivers</span>
+                        <span class="spec-pill">15h Playtime</span>
+                        <span class="spec-pill">Lightweight</span>
+                    </div>
+                    <div class="product-price-row">
+                        <span class="deal-tag">50% off</span>
+                        <span class="price-main"><sup>$</sup>29<sup>99</sup></span>
+                        <span class="price-mrp">$59.99</span>
+                    </div>
+                    <div class="prime-delivery">
+                        <span class="prime-logo-text"><i class="fa-brands fa-amazon"></i>prime</span>
+                        <span>FREE One-Day Delivery</span>
+                    </div>
+                    <div class="stock-status in-stock">✓ In Stock</div>
+                    <div class="card-actions">
+                        <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                        <button class="btn-quick-view"><i class="fa-regular fa-eye"></i> Quick Details</button>
+                    </div>
+                </div>
+
+                <!-- 11. Sony Alpha 7 IV Full-frame Camera -->
+                <div class="product-card" 
+                     data-title="Sony Alpha 7 IV Full-frame Mirrorless Interchangeable Lens Camera with 33MP Exmor R CMOS Sensor, 4K 60p Video Recording"
+                     data-category="cameras"
+                     data-brand="Sony"
+                     data-price="2398.00"
+                     data-mrp="2499.00"
+                     data-discount="4"
+                     data-rating="4.8"
+                     data-reviews="1,280"
+                     data-prime="true"
+                     data-specs="Sensor:33MP Full-Frame Exmor R Back-Illuminated;Processor:BIONZ XR Image Processor;Video:4K 60p 10-bit 4:2:2;Autofocus:759 Phase-Detection AF Points with Real-Time Eye AF;Stabilization:5-Axis Optical Image Stabilization">
+                    <span class="card-badge badge-choice">Amazon's <span>Choice</span></span>
+                    <div class="product-image-wrap">
+                        <img src="asset/box4_image.jpg" alt="Sony Alpha 7 IV Camera" loading="lazy">
+                    </div>
+                    <div class="product-category-tag">Cameras • Sony</div>
+                    <h3 class="product-title">Sony Alpha 7 IV Full-Frame Mirrorless Camera (33MP Exmor R Sensor, 4K 60p Video)</h3>
+                    <div class="product-rating">
+                        <span class="rating-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                        <span class="rating-count">4.8 (1,280)</span>
+                    </div>
+                    <div class="product-specs">
+                        <span class="spec-pill">33MP Full-Frame</span>
+                        <span class="spec-pill">4K 60p 10-Bit</span>
+                        <span class="spec-pill">Real-Time Eye AF</span>
+                    </div>
+                    <div class="product-price-row">
+                        <span class="price-main"><sup>$</sup>2,398<sup>00</sup></span>
+                        <span class="price-mrp">$2,499.00</span>
+                    </div>
+                    <div class="prime-delivery">
+                        <span class="prime-logo-text"><i class="fa-brands fa-amazon"></i>prime</span>
+                        <span>FREE Express Delivery</span>
+                    </div>
+                    <div class="stock-status in-stock">✓ In Stock</div>
+                    <div class="card-actions">
+                        <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                        <button class="btn-quick-view"><i class="fa-regular fa-eye"></i> Quick Details</button>
+                    </div>
+                </div>
+
+                <!-- 12. Apple iPad Air 11-inch M2 -->
+                <div class="product-card" 
+                     data-title="Apple iPad Air 11-inch (M2 Chip, Liquid Retina Display, 128GB, Wi-Fi 6E, 12MP Front/Back Cameras, Touch ID, Space Gray)"
+                     data-category="tablets"
+                     data-brand="Apple"
+                     data-price="569.00"
+                     data-mrp="599.00"
+                     data-discount="5"
+                     data-rating="4.8"
+                     data-reviews="3,490"
+                     data-prime="true"
+                     data-specs="Chip:Apple M2 Chip with 8-Core CPU and 9-Core GPU;Screen:11-inch Liquid Retina with True Tone & P3;Storage:128GB Flash;Camera:12MP Center Stage Ultra Wide;Accessories:Supports Apple Pencil Pro & Magic Keyboard">
+                    <span class="card-badge badge-bestseller">Top Deal</span>
+                    <div class="product-image-wrap">
+                        <img src="asset/elec_laptop.jpg" alt="Apple iPad Air M2" loading="lazy">
+                    </div>
+                    <div class="product-category-tag">Tablets • Apple</div>
+                    <h3 class="product-title">Apple iPad Air 11-inch with M2 Chip (128GB, Wi-Fi 6E, Liquid Retina Display)</h3>
+                    <div class="product-rating">
+                        <span class="rating-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                        <span class="rating-count">4.8 (3,490)</span>
+                    </div>
+                    <div class="product-specs">
+                        <span class="spec-pill">Apple M2 Chip</span>
+                        <span class="spec-pill">11" Liquid Retina</span>
+                        <span class="spec-pill">Wi-Fi 6E</span>
+                    </div>
+                    <div class="product-price-row">
+                        <span class="price-main"><sup>$</sup>569<sup>00</sup></span>
+                        <span class="price-mrp">$599.00</span>
+                        <span class="price-discount">(5% off)</span>
+                    </div>
+                    <div class="prime-delivery">
+                        <span class="prime-logo-text"><i class="fa-brands fa-amazon"></i>prime</span>
+                        <span>FREE One-Day Delivery</span>
+                    </div>
+                    <div class="stock-status in-stock">✓ In Stock</div>
+                    <div class="card-actions">
+                        <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                        <button class="btn-quick-view"><i class="fa-regular fa-eye"></i> Quick Details</button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Quick View Details Modal -->
+    <div class="modal-overlay" id="quickViewModal">
+        <div class="modal-content">
+            <button class="modal-close-btn" title="Close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-grid">
+                <div class="modal-image-col">
+                    <img id="modalProductImg" src="" alt="Product Detail">
+                </div>
+                <div class="modal-details-col">
+                    <div class="product-category-tag" id="modalCategoryTag">ELECTRONICS</div>
+                    <h2 id="modalProductTitle">Product Title</h2>
+                    <div class="product-rating">
+                        <span class="rating-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                        <span class="rating-count" id="modalRatingCount">4.8 (1,200 ratings)</span>
+                    </div>
+                    <div class="product-price-row" style="margin: 12px 0;">
+                        <span class="price-main" id="modalPrice">$0.00</span>
+                        <span class="price-mrp" id="modalMrp">$0.00</span>
+                        <span class="deal-tag" id="modalDiscount">Deal</span>
+                    </div>
+                    <div class="prime-delivery">
+                        <span class="prime-logo-text"><i class="fa-brands fa-amazon"></i>prime</span>
+                        <span>FREE Delivery & 7-Day Replacement Policy</span>
+                    </div>
+
+                    <h4 style="margin: 15px 0 6px;">Technical Specifications:</h4>
+                    <table class="modal-specs-table">
+                        <tbody id="modalSpecsBody">
+                            <!-- Populated dynamically via shop.js -->
+                        </tbody>
+                    </table>
+
+                    <div style="display:flex; align-items:center; gap: 10px; margin: 15px 0;">
+                        <label for="modalQtySelect"><strong>Quantity:</strong></label>
+                        <select id="modalQtySelect" style="padding: 4px 8px; border-radius: 4px; border: 1px solid #ccc;">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+
+                    <div class="modal-actions">
+                        <button class="btn-add-cart" id="modalAddToCartBtn" style="padding: 10px 24px;">
+                            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="cart-toast" id="cartToast"></div>
+
+    <!-- Amazon Footer -->
+    <footer>
+        <div class="foot-panel1">Back to Top</div>
+        <div class="foot-panel2">
+            <ul>
+                <p>Get to Know Us</p>
+                <a href="#">About Amazon</a>
+                <a href="#">Careers</a>
+                <a href="#">Press Releases</a>
+                <a href="#">Amazon Science</a>
+            </ul>
+            <ul>
+                <p>Connect with Us</p>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </ul>
+            <ul>
+                <p>Make Money with Us</p>
+                <a href="#">Sell on Amazon</a>
+                <a href="#">Sell under Amazon Accelerator</a>
+                <a href="#">Protect and Build Your Brand</a>
+                <a href="#">Amazon Global Selling</a>
+                <a href="#">Become an Affiliate</a>
+            </ul>
+            <ul>
+                <p>Let Us Help You</p>
+                <a href="#">COVID-19 and Amazon</a>
+                <a href="#">Your Account</a>
+                <a href="#">Returns Centre</a>
+                <a href="#">100% Purchase Protection</a>
+                <a href="#">Help</a>
+            </ul>
+        </div>
+        <div class="foot-panel3">
+            <div class="logo"></div>
+            <div class="details">
+                <button><i class="fa-solid fa-globe"></i> English</button>
+                <button><i class="fa-solid fa-dollar-sign"></i> USD - U.S. Dollar</button>
+                <button><i class="fa-solid fa-flag-usa"></i> United States</button>
+            </div>
+        </div>
+        <div class="foot-panel4">
+            <div class="pages">
+                <a href="#">Conditions of Use</a>
+                <a href="#">Privacy Notice</a>
+                <a href="#">Interest-Based Ads</a>
+            </div>
+            <div class="copyright"><i class="fa-regular fa-copyright"></i> 1996-2026, Amazon.com, Inc. or its affiliates</div>
+        </div>
+    </footer>
+
+    <script src="shop.js"></script>
+</body>
+</html>
